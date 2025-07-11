@@ -12,7 +12,7 @@ import { Card } from "@/components/ui/card";
 import { Heading } from "@/components/ui/heading";
 
 const BorrowSummary = () => {
-  const { data, isLoading, isError, error } = useGetBorrowSummaryQuery();
+  const { data, isLoading, isError, error } = useGetBorrowSummaryQuery({});
 
   if (isLoading) return <p>Loading summary...</p>;
   if (isError)

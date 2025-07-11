@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useParams, useNavigate, Link } from 'react-router';
-import {
-  BookOpen, User, Hash, Tag, FileText, Copy, Calendar,
+import {User,
+    Hash, Tag, FileText, Copy, Calendar,
   Edit3, Trash2, ArrowLeft, CheckCircle, XCircle,
   AlertTriangle, Share2, Heart, Bookmark
 } from 'lucide-react';

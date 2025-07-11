@@ -11,7 +11,7 @@ import { useDeleteBookMutation, useGetBooksQuery } from '@/redux/features/book/b
 import { Link } from 'react-router';
 
 const BooksList = () => {
-  const { data, isLoading, isError, error } = useGetBooksQuery();
+  const { data, isLoading, isError, error } = useGetBooksQuery({});
   const [deleteBook] = useDeleteBookMutation();
 
   const books = data?.data || [];

@@ -25,13 +25,16 @@ const CreateBook = () => {
     !formData.isbn ||
     formData.copies < 0;
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value, type, checked } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: type === 'checkbox' ? checked : type === 'number' ? +value : value,
-    }));
-  };
+ const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const target = e.target as HTMLInputElement;
+  const { name, value, type, checked } = target;
+
+  setFormData((prev) => ({
+    ...prev,
+    [name]: type === 'checkbox' ? checked : type === 'number' ? +value : value,
+  }));
+};
+
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

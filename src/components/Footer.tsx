@@ -1,4 +1,4 @@
-import { BookOpen, Heart } from 'lucide-react';
+import { BookOpen } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -57,8 +57,7 @@ const Footer = () => {
           </p>
           <p className="text-gray-400 text-sm flex items-center space-x-1 mt-2 md:mt-0">
             <span>Made with</span>
-            <Heart className="h-4 w-4 text-red-400 fill-current" />
-            <span>for book lovers</span>
+            <span>by the LibraryHub Team</span>
           </p>
         </div>
       </div>
